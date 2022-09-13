@@ -277,17 +277,20 @@ people.forEach(logperson)
 
 
 
-const ul = document.querySelector(".people");
 
 
 
-//callaback functions in action 
- let html5 = ``;
 
- people.forEach(function(person,index){
+//callaback functions in action
+const ul = document.querySelector(".people"); 
+let html5 = ``;
+
+ people.forEach((person,index)=>{
    //create html template 
    html5 += `<li style = color:red>${index}--${person}</li>`;
  })
 
 console.log(html5);
 ul.innerHTML = html5;
+
+ 
