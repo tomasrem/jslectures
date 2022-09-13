@@ -11,3 +11,4 @@ let user = {        //{} this braces for object literall
 console.log(user);
 console.log(user.name);
 console.log(user.age);
+console.log(user["name"]); // this is usable when we are passing in key variable
