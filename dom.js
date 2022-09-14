@@ -12,3 +12,4 @@ console.log(error_div);
 const paragraphs = document.querySelectorAll("p")
 console.log(paragraphs); // this is not an array but nodelist 
 console.log(paragraphs[1])
+
