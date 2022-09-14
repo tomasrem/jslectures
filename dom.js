@@ -9,3 +9,6 @@ console.log(error);
 const error_div = document.querySelector("div.error");
 console.log(error_div);
 // go to Elements/copy/selector to get css pointer :D
+const paragraphs = document.querySelectorAll("p")
+console.log(paragraphs); // this is not an array but nodelist 
+console.log(paragraphs[1])
