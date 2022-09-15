@@ -13,3 +13,69 @@ const paragraphs = document.querySelectorAll("p")
 console.log(paragraphs); // this is not an array but nodelist 
 console.log(paragraphs[1])
 
+const par = document.querySelector("p");
+console.log(par.innerText);
+//par.innerText = "Whats up dogg"; // changing text on the tag 
+//par.innerText += "Whats up dogg";
+
+// const paraas = document.querySelectorAll("p");
+
+// paraas.forEach(para => { // logging each tag text to console
+//     console.log(para.innerText);
+//     para.innerText += " new text babyy";  // adding text to each one 
+// });
+
+// get a refference to the node 
+
+const content = document.querySelector(".content");
+
+console.log(content.innerHTML);
+
+content.innerHTML = "<h3>This is sparta </h3>"
+
+const people = ["mario","luigy","joshi"];
+
+people.forEach(person => {
+    content.innerHTML += `<p class = "btn btn-lg btn-danger m-3"> ${person}</p>`;
+});
+
+
+const link = document.querySelector("a");
+console.log(link.getAttribute("href")); // this is how we get an attribute of html element 
+
+link.setAttribute("href","www.somelink.com"); // this is how we change an attribute 
+link.innerText = "Somelink textt";
+
+const msg = document.querySelector("div.error");
+console.log(msg.getAttribute("class"));
+msg.setAttribute("class","success");
+
+// changing css property, just one without overwritting everything else
+const dom = document.querySelector("h1");
+
+dom.style.color = "blue";
+console.log(dom.style)  // all the css propereties possible to the element, just pick the one you want to change
+dom.style.padding = "50px";
+
+// if we have ex. font-size in javascrypt we vrite it as fontSize , without the - shit 
+dom.style.fontSize = "40";
+
+// adding removing classes from html elements 
+console.log(dom.classList);
+dom.classList.add("niggy"); // adding class 
+dom.classList.remove("btn"); // removing class
+
+const taggs =  document.querySelectorAll("div.tagggs p")
+console.log(taggs)
+
+taggs.forEach(para => {
+    if(para.innerText.includes("error")){para.classList.add("error")}
+
+
+    else if (para.innerText.includes("succes")){   // inner text gets us visible text but .textContent all of the text (including <span class="display:none"></span> and so on :D)
+        para.classList.add("success")
+    }
+});
+
+dom.classList.toggle("testik");  // adds the class
+dom.classList.toggle("testik");  // when we call it again it removes the class
