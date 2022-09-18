@@ -79,3 +79,27 @@ taggs.forEach(para => {
 
 dom.classList.toggle("testik");  // adds the class
 dom.classList.toggle("testik");  // when we call it again it removes the class
+
+
+///////////// 009
+/////adding class to each child of parent element
+const article = document.querySelector("article");
+
+console.log(article.children); // we cant do methods for each etc on html collection 
+
+console.log(Array.from(article.children)); // we can do that on array tho 
+
+Array.from(article.children).forEach(child=>{
+    child.classList.add("article-element")
+})
+
+///// 
+
+
+
+const title = document.querySelector("h2");   // getting parent element from the child 
+console.log(title.parentElement);
+console.log(title.parentElement.parentElement);
+console.log(title.nextElementSibling); // previous next etcc
+//
+
