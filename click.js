@@ -66,4 +66,26 @@ ul.addEventListener("click" , e => {
         }
 
     }
-})
+});
+
+////////////////////////////////////////////////////////////////// more event listeners
+const copy = document.querySelector(".copy-me")
+
+copy.addEventListener("copy" , () => {
+    console.log("oi bruh dont copyyyyyy")
+
+});
+
+const box = document.querySelector(".dragg");
+
+box.addEventListener("mousemove" , e => {
+    //console.log(e);
+    //console.log(e.offsetX , e.offsetY)
+    box.textContent = `x position is ${e.offsetX}    y position is ${e.offsetY}`
+});
+
+
+
+document.addEventListener("wheel" , (event) => {  /// event.pageX event.pageY
+    console.log(event)
+});
