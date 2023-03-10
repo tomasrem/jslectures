@@ -1,0 +1,10 @@
+.custom{
+    background-color: rgb(135, 212, 145);
+    height: 400px;
+}
+
+.my-group{
+    max-width: 400;
+    display: flex;
+}
+

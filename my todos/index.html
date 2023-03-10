@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-flex custom">
+        <div class="container text-center mycontainer">
+            <h1 class=" p-4">My todo list </h1>
+
+            <ul class="list-group mygroup">
+                <li class="list-group-item myitem d-flex justify-content-between">Walk the dog<i class="far fa-trash-alt" id="trash"></i></li>
+                <li class="list-group-item myitem">Milk the cow<i class="far fa-trash-alt delete" id="trash"></i></li>
+                <li class="list-group-item myitem">And so on <i class="far fa-trash-alt delete" id="trash"></i></li>
+            </ul>
+            <form class="myform">
+                <input type="text" class="form-control text-center my-4 myinput" name="myinput" id="addTask" placeholder="press enter to add" style="width:350;">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
